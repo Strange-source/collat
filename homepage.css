@@ -1,0 +1,290 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Poppins';
+    scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #fff;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #e4e4e4;
+    border-radius: 5px;
+}
+
+header {
+    height: 100px;
+    width: calc(100% - 300px);
+    padding: 0 150px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+a.nav1,
+a.nav2 {
+    text-decoration: none;
+    color: #f1f1f1;
+    margin-left: 30px;
+    margin-right: 30px;
+    position: relative;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: .75s;
+}   a.nav1::after,
+    a.nav2::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        width: 100%;
+        height: 3px;
+        background-color: #53d215;
+        border-radius: 10px;
+        transform-origin: center;
+        transform: scaleX(0);
+        transition: .75s;
+    }   a.nav1:hover:after,
+        a.nav2:hover:after {
+            transform: scaleX(1);
+        }   a.nav1:hover,
+            a.nav2:hover {
+                color: #76cd26;
+            }
+
+h1.logo {
+    color: #a12ff3;
+    font-size: 2rem;
+    user-select: none;
+    transition: .75s;
+}   h1.logo:hover {
+        color: #53d215;
+    }
+
+
+
+div.sepearator1 {
+    height: 50px;
+    width: 100%;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(13,17,23,1) 50%);
+}
+
+
+
+div.body {
+    height: calc(100vh - 150px);
+    width: calc(100% - 400px);
+    padding: 0 200px;
+    background-color: #0d1117;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+div.img {
+    height: 550px;
+    width: 550px;
+    margin-left: 60px;
+    background: url(Images/pbrain.png) no-repeat center;
+    background-size: cover;
+    transition: 1s;
+}   div.img:hover {
+        height: 550px;
+        width: 550px;
+        margin-left: 60px;
+        background: url(Images/gbrain.png) no-repeat center;
+        background-size: cover;
+        transition: 1s;
+    }
+
+div.para {
+    width: 650px;
+    color: #f1f1f1;
+}   div.para > p {
+        font-size: 1rem;
+        letter-spacing: 1px;
+    }
+
+div.para > h1 {
+    color: #a12ff3;
+}
+
+a.pcolor {
+    color: #a12ff3;
+    transition: .75s;
+    font-weight: 600;
+}   a.pcolor:hover {
+        color: #53d215;
+    }
+
+
+
+    div.sepearator2 {
+        height: 50px;
+        width: 100%;
+        background: rgb(0,0,0);
+        background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(13,17,23,1) 50%);
+    }
+
+
+
+div.about {
+    height: calc(450px - 100px);
+    width: calc(100% - 800px);
+    padding: 50px 400px;
+    background: #000;
+}
+
+div.about > h1 {
+    color: #f1f1f1;
+    text-align: center;
+}
+
+div.about > h2 {
+    color: #a12ff3;
+    font-family: "Inter";
+    text-align: center;
+}
+
+div.about > p {
+    color: #f1f1f1;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+div.about > button.read {
+    height: 50px;
+    width: 175px;
+    display: block;
+    position: relative;
+    left: 50%;
+    transform: translate(-50% );
+    cursor: pointer;
+    font-size: 1.1rem;
+    border: hidden;
+    border-radius: 5px;
+    background-color: #a12ff3;
+    font-weight: 500;
+    transition: 1s;
+}   div.about > button.read:hover {
+        background-color: #53d215;
+    }
+
+div.contact {
+    height: calc(450px - 100px);
+    width: calc(100% - 800px);
+    padding: 50px 400px;
+    background: #0d1117;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+label.phone-num,
+label.email,
+label.s-media {
+    color: #f1f1f1;
+    font-size: 2rem;
+    text-align: center;
+    margin-left: 40px;
+}
+
+label.email {
+    margin-left: 50px;
+}
+
+label.s-media {
+    margin-left: 40px;
+}
+
+input.phone-num,
+input.email {
+    background: transparent;
+    font-size: 1.2rem;
+    border: hidden;
+    outline: none;
+}
+
+input.phone-num::placeholder,
+input.email::placeholder {
+    color: #a12ff3;
+}
+
+button.s-media {
+    height: 50px;
+    width: 50px;
+    margin: 5px 10px;
+    font-size: 2rem;
+    color: #a12ff3;
+    background: transparent;
+    border: hidden;
+    cursor: pointer;
+    transition: 1s;
+}   button.s-media:hover {
+        color: #53d215;
+    }
+
+div.history {
+    height: calc(80vh - 300px);
+    padding: 150px 200px;
+    width: calc(100% - 400px);
+    background-color: #0d1117;
+}
+
+div.history > h1 {
+    color: #a12ff3;
+    font-size: 3rem;
+    text-align: center;
+    transition: 1s;
+    user-select: none;
+}   div.history > h1:hover {
+        color: #53d215;
+    }
+
+div.history > h2 {
+    color: #f1f1f1;
+    font-size: 2rem;
+    text-align: center;
+}
+
+div.tiles {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+div.part > h1 {
+    color: #a12ff3;
+    text-align: center;
+    font-size: 3rem;
+    transition: 1s;
+    user-select: none;
+}   div.part > h1:hover {
+        color: #53d215;
+    }
+
+div.part > h2 {
+    color: #f1f1f1;
+    text-align: center;
+    user-select: none;
+    font-size: 2rem;
+}
+
+div.part > h3 {
+    color: #a12ff3;
+    text-align: center;
+    user-select: none;
+    font-size: 1.5rem;
+    transition: 1s;
+}   div.part > h3:hover {
+        color: #53d215;
+    }
